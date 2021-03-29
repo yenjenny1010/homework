@@ -1,0 +1,1 @@
+(number_of_sides*side**2)/(4*math.tan(math.pi/number_of_sides))
