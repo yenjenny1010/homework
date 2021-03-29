@@ -1,10 +1,13 @@
 #include <iostream> 
+#include <cmath>
 using namespace std;
 int main(){
-    int population=312032486;
-    for i in range(6):
-        population=population+(365*24*60*60)//7;
-        population=population+(365*24*60*60)//45;
-        population=population-(365*24*60*60)//13;
-        cout<<i,".",population
+    double population = 312032486;
+    for (int i=1;i<6;i++){
+        population=population+(365*24*60*60)/(7*i);
+        population=population+(365*24*60*60)/(45*i);
+        population=population-(365*24*60*60)/(13*i);
+        cout<<i<<"."<<population << endl;
+    return 0;
+    }
     }
