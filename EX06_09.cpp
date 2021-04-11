@@ -5,26 +5,21 @@ using namespace std;
 
 double celsiusToFahrenheit(double celsius)
 {
-  return (9.0 / 5.0) * celsius + 32;
+  double Fahrenheit = (9 / 5.0) * celsius + 32;
+  return Fahrenheit;
 }
-
-double fahrenheitToCelsius(double fahrenheit)
+double FahrenheitTocelsius(double Fahrenheit)
 {
-  return (5.0 / 9) * (fahrenheit - 32);
+  double celsius = (5 / 9.0) * (Fahrenheit - 32);
+  return celsius;
 }
-
 int main()
 {
-  cout << setw(12) << "Celsius" << setw(12) << "Fahrenheit" << setw(12) << "|" <<
-    setw(12) << "Fahrenheit" << setw(12) << "Celsius" << endl;
-  cout << "-----------------------------------------------------------" << endl;
-
-  double celsius = 40,farenheit = 120;
-  for (int i = 1; i <= 10; celsius--, farenheit -= 10, i++)
+  cout<<setw(16)<<"Celsius"<<setw(16)<<"Fahrenheit"<<"|"<<setw(16)<<"Fahrenheit"<<"Celsius";
+  for (int i = 0; i < 10; i++)
   {
-    cout << setw(12) << celsius << setw(12) << celsiusToFahrenheit(celsius) <<
-      setw(12) << "|" << setw(12) << farenheit << setw(12) << setprecision(5) << showpoint << fahrenheitToCelsius(farenheit) << endl;
+    double Fahrenheit = celsiusToFahrenheit(40 - i);
+    double celsius = FahrenheitTocelsius(120 - i * 10);
+    
   }
-
-  return 0;
 }
