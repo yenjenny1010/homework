@@ -1,1 +1,1 @@
-"Celsius"
+#設定initial value

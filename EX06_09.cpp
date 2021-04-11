@@ -22,4 +22,6 @@ int main()
     double celsius = FahrenheitTocelsius(120 - i * 10);
     
   }
+  return 0;
 }
+/*心得

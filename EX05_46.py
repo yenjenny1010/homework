@@ -1,3 +1,4 @@
+#s0951034 顏禎誼
 import math
 
 number = 10 
@@ -12,3 +13,4 @@ mean = sum / number
 
 deviation = ((sum_1 - sum * sum / number) / (number - 1))**1/2
 print("The mean is ",mean,"The standard deviation is ",deviation)
+'''心得

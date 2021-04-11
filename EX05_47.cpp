@@ -1,3 +1,4 @@
+//s0951034 顏禎誼
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -25,3 +26,4 @@ int main()
 
   return 0;
 }
+/*心得
